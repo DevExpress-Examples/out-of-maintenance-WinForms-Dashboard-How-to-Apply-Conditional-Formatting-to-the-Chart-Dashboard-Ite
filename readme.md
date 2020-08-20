@@ -7,7 +7,7 @@
 
 The following example illustrates how to apply conditional formatting to Chart items with various series types:
 
-![](~/images/chart-with-conditional-formatting-applied.png)
+![](/images/chart-with-conditional-formatting-applied.png)
 
 |Format Condition Type |  Rule Name | Appearance style |
 |---|---|---|
