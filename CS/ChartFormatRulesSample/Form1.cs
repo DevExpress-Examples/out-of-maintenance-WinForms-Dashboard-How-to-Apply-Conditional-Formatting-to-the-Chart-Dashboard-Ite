@@ -23,7 +23,7 @@ namespace ChartFormatRulesSample {
         }
         public void AddFormatRulesToBarSeries(ChartDashboardItem chart) {
             SimpleSeries series = chart.Panes[0].Series[0] as SimpleSeries;
-            ChartItemFormatRule gradientRule = new ChartItemFormatRule(series.Value, series.Value);
+            ChartItemFormatRule gradientRule = new ChartItemFormatRule(series.Value, series);
             FormatConditionRangeGradient condition = new FormatConditionRangeGradient(FormatConditionRangeGradientPredefinedType.RedBlue);
             gradientRule.Condition = condition;
             gradientRule.ShowInLegend = false;
@@ -31,17 +31,17 @@ namespace ChartFormatRulesSample {
         }
         public void AddFormatRulesToLineSeries(ChartDashboardItem chart) {
             SimpleSeries series = chart.Panes[0].Series[0] as SimpleSeries;
-            ChartItemFormatRule valueRule1 = new ChartItemFormatRule(series.Value, series.Value);
+            ChartItemFormatRule valueRule1 = new ChartItemFormatRule(series.Value, series);
             FormatConditionValue valueCondition1 = new FormatConditionValue(DashboardFormatCondition.Greater, 3000);
-            valueCondition1.StyleSettings = new AppearanceSettings(Color.Green);
+            valueCondition1.StyleSettings = new ColorStyleSettings(Color.Green);
             valueRule1.Condition = valueCondition1;
             valueRule1.ShowInLegend = true;
             valueRule1.Description = "UnitPrice greater than $3K";
             chart.FormatRules.Add(valueRule1);
 
-            ChartItemFormatRule valueRule2 = new ChartItemFormatRule(series.Value, series.Value);
+            ChartItemFormatRule valueRule2 = new ChartItemFormatRule(series.Value, series);
             FormatConditionValue valueCondition2 = new FormatConditionValue(DashboardFormatCondition.Less, 3000);
-            valueCondition2.StyleSettings = new AppearanceSettings(Color.Red);
+            valueCondition2.StyleSettings = new ColorStyleSettings(Color.Red);
             valueRule2.Condition = valueCondition2;
             valueRule2.ShowInLegend = true;
             valueRule2.Description = "UnitPrice less than $3K";
