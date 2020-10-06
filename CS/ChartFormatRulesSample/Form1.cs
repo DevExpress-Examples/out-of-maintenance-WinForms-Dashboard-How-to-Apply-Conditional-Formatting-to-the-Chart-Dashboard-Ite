@@ -36,7 +36,7 @@ namespace ChartFormatRulesSample {
             valueCondition1.StyleSettings = new ColorStyleSettings(Color.Green);
             valueRule1.Condition = valueCondition1;
             valueRule1.ShowInLegend = true;
-            valueRule1.Description = "UnitPrice greater than $3K";
+            valueRule1.DisplayName = "UnitPrice is greater than $3K";
             chart.FormatRules.Add(valueRule1);
 
             ChartItemFormatRule valueRule2 = new ChartItemFormatRule(series.Value, series);
@@ -44,7 +44,7 @@ namespace ChartFormatRulesSample {
             valueCondition2.StyleSettings = new ColorStyleSettings(Color.Red);
             valueRule2.Condition = valueCondition2;
             valueRule2.ShowInLegend = true;
-            valueRule2.Description = "UnitPrice less than $3K";
+            valueRule2.DisplayName = "UnitPrice is less than $3K";
             chart.FormatRules.Add(valueRule2);
         }
     }
