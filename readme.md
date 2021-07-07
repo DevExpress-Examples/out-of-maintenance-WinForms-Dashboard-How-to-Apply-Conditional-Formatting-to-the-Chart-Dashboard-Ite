@@ -3,7 +3,7 @@
 
 * [Form1.cs](./CS/ChartFormatRulesSample/Form1.cs) 
 
-# WinForms Dashboard - How to Apply Conditional Formatting to the Chart Dashboard Item
+# Dashboard for WinForms - How to Apply Conditional Formatting to the Chart Dashboard Item
 
 The following example illustrates how to apply conditional formatting to Chart items with different series types:
 
@@ -22,6 +22,3 @@ The following example illustrates how to apply conditional formatting to Chart i
 ## More Examples
 * [WinForms Dashboard - How to Highlight Data in a Scatter Chart Dashboard Item](https://github.com/DevExpress-Examples/WinForms-Dashboard-How-to-Highlight-Data-in-the-Scatter-Chart-Dashboard-Item)
 * [WinForms Dashboard - How to Apply Conditional Formatting to the Card Dashboard Item](https://github.com/DevExpress-Examples/how-to-apply-conditional-formatting-to-the-card-dashboard-item)
-
-
-
